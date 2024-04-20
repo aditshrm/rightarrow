@@ -1,0 +1,298 @@
+html{
+  background-image:url("darkchristmas.jpg");
+  background-attachment: fixed;
+  padding: 10px 20px;
+}
+/*Sign In*/
+.signin>a{
+  text-decoration: none;
+  color: white;
+}
+.signin>a:hover{
+  color: black;
+}
+#signinform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+}
+.signin {
+  color: white;
+}
+.signin > form > [type="text"], [type="password"]{
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+  font-family: Verdana;
+  text-align: center;
+  color: black;
+}
+.signin > form > [type="submit"]{
+  background-color: rgb(150,195,210);
+  border: 1px double black;
+  outline: 1px solid white;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+}
+.signin > form > [type="submit"]:hover{
+  transform: scale(1.1);
+  background-color: rgb(20,70,255);
+  color: white;
+  cursor: pointer;
+}
+body{
+  text-align:center;
+  font-family:Verdana;
+  margin: 0px;
+}
+h1{
+  margin: 30px auto 50px;
+  font-size: 50px;
+  color: #ffffff;
+}
+#writeup{
+  font-family:Verdana;
+  font-size: 15px;
+  padding: 15px;
+  color: #ffffff;
+}
+#writeupabbr{
+  text-decoration: none;
+  color:aquamarine;
+}
+
+#logo{
+  position: absolute;
+  left: 8%;
+  height: 110px;
+  width: 100px;
+}
+.navbar {
+  background-color: rgba(255,255,255,0.5);
+  min-width: 400px;
+  max-width: 40%;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  margin: 20px auto 20px auto;
+}
+.navbar > a{
+  position: relative;
+  top: 30%;
+  margin: 30px;
+  text-decoration: none;
+  color: black;
+  font-family: Verdana;
+  font-size: 15px;
+}
+.navbar > a:hover{
+  transform: scale(1.05);
+  color: rgba(0,0,100);
+  text-shadow: 1px 1px 1px grey;
+  transition-duration: 0.1s;
+}
+/* SlideShow */
+#slideshow{
+  align-items: center;
+  margin: auto;
+}
+#slide-container{
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+.slides{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url("./images/slideshowbg.png");
+}
+.slide > img{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+}
+#rightbutton{
+  background-color: rgba(255,255,255,0.5);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+#leftbutton{
+  background-color: rgba(255,255,255,0.5);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+#choicessignup{
+  position:relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#signuplink{
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 30px;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(42, 103, 102, 0.493);
+}
+/* Footer */
+#endbuttons{
+  background-color: rgba(255,255,255,0.6);
+  padding:40px 30px 60px 30px;
+  margin:20px 0px 0px;
+  font-size: 15px;
+  font-family:verdana;
+  position:relative;
+  top:100%;
+  border-radius: 10px;
+}
+#checkdiv{
+  float:left;
+  padding:10px 50px 10px 50px;
+  margin: 0px;
+}
+#checkdiv> a{
+  margin: 30px;
+  color: rgba(50,70,60);
+  text-decoration: none;
+  font-size: 15px;
+}
+#checkdiv>a:hover{
+  color: black;
+}
+#reportdiv{
+  padding: 10px 50px 10px 50px;
+  border: 1px solid rgba(50,70,60,0);
+  border-left-color: rgba(50,70,60);
+  float: right;
+}
+#reportdiv > a{
+  color: rgba(50,70,60);
+  text-decoration: none;
+  font-family:arial;
+}
+#report:hover{
+  color: black;
+}
+
+h2{
+  color: white;
+  margin: 50px auto;
+  justify-content: space-between;
+}
+#add{
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(163, 197, 234);
+  color: black;
+
+}
+.todoapp{
+  margin: 100px auto 200px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  padding: 100px 50px;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(255,255,255,0.0));
+  border-radius: 30px;
+}
+input{
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+#tasklist {
+  background-color: rgba(255,255,255,0.5);
+  list-style-type: none;
+  padding: 0px;
+  margin: 40px;
+  text-align: center;
+  border-radius: 20px;
+
+}
+#tasklist li{
+  position: relative;
+  font-size: 20px;
+}
+#tasklist li::before{
+  content: " ";
+  color: black;
+  font-size: 50px;
+  width: 1em;
+  margin-left: -1em;
+  margin-right: 0.5em;
+  text-align: center;
+}
+#tasklist li.checked{
+  text-decoration: line-through;
+  color: grey;
+}
+#tasklist li.checked::before{
+  content: " ";
+  background-image: url("../../Static/images/check.png");
+  color: grey;
+}
+@media(max-width:900px){
+  hr{
+      width:auto;
+      margin:0px 150px 0px 150px;
+  }
+  #endbuttons{
+      height:100px;
+  }
+  #checkdiv{
+      float: none;
+      padding: 30px 20px 30px 20px;
+  }
+  #reportdiv{
+      padding:30px 20px 30px 20px;
+      margin:0px 130px 0px 130px;
+      border-left-color: rgba(50,70,60,0);
+      border-top-color:rgba(50,70,60);
+      float:none;
+  }
+  h1{
+    font-size:40px;
+  }
+  #writeup{
+    font-size:12px;
+  }
+  #choicessignup{
+      padding: 25px;
+      font-size:17px;
+  }
+  .navbar{ 
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .navbar > a{
+    display:block;
+    margin: 10px;
+  }
+  .todoapp{
+    padding: 100px 20px;
+  }
+  #top{
+    display: flex;
+    flex-direction: column;
+  }
+  #logo{
+    position: relative;
+    left: 0px;
+    margin: auto;
+  }
+  #slide-container{
+    height: 300px;
+  }
+}
